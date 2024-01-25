@@ -15,12 +15,12 @@ ARG USE_MOBY="true"
 ENV DOCKER_BUILDKIT=1
 # Install needed packages and setup non-root user. Use a separate RUN statement to add your
 # own dependencies. A user of "automatic" attempts to reuse an user ID if one already exists.
-ARG USERNAME=vscode
-ARG USER_UID=1002
-ARG USER_GID=1002
+# ARG USERNAME=vscode
+# ARG USER_UID=
+# ARG USER_GID=
 # Proxy setting
-ENV http_proxy="http://wwwproxy.osakac.ac.jp:8080"
-ENV https_proxy="http://wwwproxy.osakac.ac.jp:8080"
+# ENV http_proxy=""
+# ENV https_proxy=""
 
 RUN apt-get update 
 # User setup

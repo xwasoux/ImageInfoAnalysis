@@ -26,6 +26,11 @@ services:
     entrypoint: /usr/local/share/docker-init.sh
     command: sleep infinity
     environment:
+      # network setting
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTPS_PROXY}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTPS_PROXY}
       # poetry setting environments
       - POETRY_VIRTUALENVS_CREATE=false
       - POETRY_VIRTUALENVS_IN_PROJECT=true
