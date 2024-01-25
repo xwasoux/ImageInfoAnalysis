@@ -129,10 +129,10 @@ dmypy.json
 .pyre/
 
 # Directory
-data/
-output/
+saved_model/
 
 # file extension
+*.bin
 *.txt
 *.json
 *.jsonl
@@ -140,8 +140,10 @@ output/
 *.tar
 *.zip
 *.pickle
+*.pkl
 *.lock
 *.csv
 *.tsv
 *.html
 *.cas
+*.pth
